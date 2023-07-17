@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRKR ACE</title>
+  <!-- Link to Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<style>
+    .img-fluid{
+        size: 100;
+    }
+</style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <img class="h-8 w-auto" src="https://srkrace.files.wordpress.com/2015/05/ace-logo.jpg?w=300" alt="Your Company">
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex md:ml-6">
+            <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+
+          <a href="Events.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Events</a>
+          <a href="gallery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+         
+          <a href="
+          #calendar" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+        </div>
+
+        <!-- Profile dropdown -->
+        <div class="relative hidden md:block">
+          <div>
+            <button type="button" id="profile-button"
+              class="flex text-sm rounded-full text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800">
+              <img class="h-8 w-8 rounded-full" src="https://www.shutterstock.com/image-vector/avatar-icon-260nw-424477513.jpg" alt="">
+            </button>
+          </div>
+          <!-- Dropdown menu, show/hide based on menu state -->
+          <div id="profile-dropdown"
+            class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+            role="menu" aria-orientation="vertical" aria-labelledby="profile-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <!-- Profile option -->
+           
+              <!-- Sign out option -->
+              <a href="Registration.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (hidden on larger screens) -->
+    <div class="md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="Events.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Events</a>
+        <a href="gallery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+        <a href="py-8" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-4 mb-4">About ACE</h1>
+        <p class="text-lg text-gray-700">
+            ACE (Association of Computer Engineers) is a student organization of the Computer Science and Engineering Department
+            of S.R.K.R Engineering College, Bhimavaram. It was started in the year 2006 and since then it has been aiming towards
+            enlightening the students in technical aspects as well as communication and soft-skills that are required in today's world.
+          </p>
+          <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+          <p class="text-gray-800">At ACE, our mission is to provide a conducive platform for students to explore
+            their potential and excel in both academic and extracurricular pursuits. We are committed to:</p>
+          <ul class="list-disc list-inside mt-4">
+            <li>Technical Brilliance: Organizing workshops, seminars, and technical events to keep students updated
+              with cutting-edge technologies and industry trends.</li>
+            <li>Cultural Enrichment: Nurturing artistic talents and celebrating cultural diversity through events
+              like "Spurthi," our annual cultural fest.</li>
+            <li>Industry Connect: Bridging the gap between academia and industry by organizing guest lectures,
+              industrial visits, and internships.</li>
+            <li>Innovation and Problem-Solving: Hosting hackathons and competitions, including the renowned
+              "Prajwalan," where students collaborate to develop innovative solutions to real-world challenges.</li>
+            <li>Soft Skills Development: Recognizing the significance of communication and interpersonal skills,
+              ACE conducts sessions and workshops to enhance the soft skills of its members.</li>
+            <li>Social Responsibility: Instilling a sense of social responsibility among students, ACE engages in
+              community service activities.</li>
+          </ul>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="https://srkrace.files.wordpress.com/2015/05/ace-logo.jpg?w=300" alt="About Us" class="img-fluid" style="height: max-content;" />
+      </div>
+    </div>
+  </div>
+ 
+
+
+        <!-- Right Content - Logo -->
+       
+
+
+
+
+      
+      <!-- Event Cards -->
+      <section class="py-8">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl font-semibold mb-6">Events Organized by ACE</h1>
+    
+          <!-- Event Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Event Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <img src="https://source.unsplash.com/featured/400x300/?hackathon" alt="Hackathon Event" class="w-full h-40 object-cover rounded-lg">
+              <h2 class="text-xl font-semibold mt-4">Prajwalan - Hackathon</h2>
+              <p class="text-gray-700 mt-2">Prajwalan is an annual hackathon organized by ACE, where students collaborate to develop innovative solutions to real-world challenges.</p>
+              <a href="#" class="text-indigo-600 font-medium mt-4 inline-block">Learn More</a>
+            </div>
+    
+            <!-- Event Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <img src="https://source.unsplash.com/featured/400x300/?cultural+fest" alt="Cultural Fest" class="w-full h-40 object-cover rounded-lg">
+              <h2 class="text-xl font-semibold mt-4">Spurthi - Cultural Fest</h2>
+              <p class="text-gray-700 mt-2">Spurthi is an annual cultural fest organized by ACE, where students showcase their artistic talents and celebrate cultural diversity.</p>
+              <a href="#" class="text-indigo-600 font-medium mt-4 inline-block">Learn More</a>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="https://source.unsplash.com/featured/400x300/?workshop" alt="Technical Workshop" class="w-full h-40 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4">Technical Workshops</h2>
+                <p class="text-gray-700 mt-2">ACE conducts regular technical workshops to keep students updated with cutting-edge technologies and industry trends.</p>
+                <a href="#" class="text-indigo-600 font-medium mt-4 inline-block">Learn More</a>
+              </div>
+      
+              <!-- Event Card 4 -->
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="https://source.unsplash.com/featured/400x300/?seminar" alt="Seminar Event" class="w-full h-40 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4">Guest Seminars</h2>
+                <p class="text-gray-700 mt-2">ACE organizes guest seminars where industry professionals share their insights and experiences with students.</p>
+                <a href="#" class="text-indigo-600 font-medium mt-4 inline-block">Learn More</a>
+              </div>
+      
+              <!-- Event Card 5 -->
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="https://source.unsplash.com/featured/400x300/?competition" alt="Competition" class="w-full h-40 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4">Coding Competitions</h2>
+                <p class="text-gray-700 mt-2">ACE hosts coding competitions to foster problem-solving skills and healthy competition among students.</p>
+                <a href="#" class="text-indigo-600 font-medium mt-4 inline-block">Learn More</a>
+              </div>
+      
+              <!-- Event Card 6 -->
+              <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="https://source.unsplash.com/featured/400x300/?volunteering" alt="Volunteering" class="w-full h-40 object-cover rounded-lg">
+                <h2 class="text-xl font-semibold mt-4">Community Volunteering</h2>
+                <p class="text-gray-700 mt-2">ACE actively engages in community service activities to give back to society and make a positive impact.</p>
+                <a href="#" class="text-indigo-600 font-medium mt-4 inline-block">Learn More</a>
+            </div>
+        </div>
+      </div>
+    </section> 
+    <section class="py-8">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl font-semibold mb-6">SRKR ACE Gallery</h1>
+    
+          <!-- Image Gallery -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Image 1 -->
+            <div class="shadow rounded-lg overflow-hidden gallery-item">
+              <img src="https://source.unsplash.com/featured/400x300/?hackathon" alt="Technical Event" class="w-full h-40 object-cover">
+            </div>
+    
+            <!-- Image 2 -->
+            <div class="shadow rounded-lg overflow-hidden gallery-item">
+              <img src="https://source.unsplash.com/featured/400x300/?cultural+fest" alt="Cultural Fest" class="w-full h-40 object-cover">
+            </div>
+    
+            <!-- Image 3 -->
+            <div class="shadow rounded-lg overflow-hidden gallery-item">
+              <img src="https://source.unsplash.com/featured/400x300/?workshop" alt="Technical Workshop" class="w-full h-40 object-cover">
+            </div>
+    
+            <!-- Image 4 -->
+            <div class="shadow rounded-lg overflow-hidden gallery-item">
+              <img src="https://source.unsplash.com/featured/400x300/?seminar" alt="Guest Seminar" class="w-full h-40 object-cover">
+            </div>
+    
+            <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://source.unsplash.com/featured/400x300/?seminar" alt="Guest Seminar" class="w-full h-40 object-cover">
+              </div>
+      
+              <!-- Image 5 -->
+              <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://source.unsplash.com/featured/400x300/?competition" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>
+    
+      
+              <!-- Image 6 -->
+              <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://source.unsplash.com/featured/400x300/?volunteering" alt="Community Volunteering" class="w-full h-40 object-cover">
+              </div>
+              <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://source.unsplash.com/featured/400x300/?competition" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.wdhobpNC3eWwixXToQ_ZzgHaEM&pid=Api&P=0&h=180s" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.eWUjOCd3NX0YumGQSDNQAwHaEK&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.4UcZyuvVNcqRTkTRr38z0gHaE7&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="http://3.bp.blogspot.com/-VS8SPrbE-4U/VeqoFansY2I/AAAAAAAAARk/AK1VXET2ukA/s400/VIT%2BUniversity%2Btechnical%2Bfest%2BGraVITas.jpg" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.33OMupkB8PNjMomz8ifZ1AHaFj&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.nBjkSot5N3_ZzBxl2kzDwQHaEK&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.GHxET-kAmSpKmHIAmFhP-gHaD4&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.z92rebhXrK4kGgPFu8PehAHaEJ&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="py-8">
+        <div id="calendar">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl font-semibold mb-6">SRKR ACE Events</h1>
+    
+          <!-- Event List -->
+          <ul class="bg-white shadow-md rounded-lg divide-y divide-gray-200">
+            <!-- Event 1 -->
+
+    
+            <!-- Event 2 -->
+            <li class="px-6 py-4">
+              <div class="flex items-center">
+                <span class="font-semibold">Prajwalan 2k24</span>
+                <span class="ml-auto">Date: 10th September 2024</span>
+              </div>
+            </li>
+            <li class="px-6 py-4">
+                <div class="flex items-center">
+                  <span class="font-semibold">spurthi 2k24</span>
+                  <span class="ml-auto">Date: 10th December 2023</span>
+                </div>
+              </li><li class="px-6 py-4">
+                <div class="flex items-center">
+                  <span class="font-semibold">Job-a-Thon</span>
+                  <span class="ml-auto">Date: 10th January 2023</span>
+                </div>
+              </li><li class="px-6 py-4">
+                <div class="flex items-center">
+                  <span class="font-semibold">Ted X SRKR</span>
+                  <span class="ml-auto">Date: 10th March 2023</span>
+                </div>
+              </li>
+              <li class="px-6 py-4">
+                <div class="flex items-center">
+                  <span class="font-semibold">Sagi Ramakrishnam Raju 90th birthday</span>
+                  <span class="ml-auto">Date: 19th July 2023</span>
+                </div>
+              </li>
+            <!-- Event 3 -->      </ul>
+    </div>
+        </div>
+</section>
+
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <div class="container mx-auto">
+      <p>&copy; 2023 ACE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <!-- JavaScript Dependencies (Bootstrap JS for carousel) -->
+  <!-- Your page content goes here -->
+
+  <script>
+    // JavaScript to handle profile dropdown toggle
+    const profileButton = document.getElementById('profile-button');
+    const profileDropdown = document.getElementById('profile-dropdown');
+
+    function toggleProfileDropdown() {
+      profileDropdown.classList.toggle('hidden');
+    }
+
+    profileButton.addEventListener('click', toggleProfileDropdown);
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', function (event) {
+      if (!profileButton.contains(event.target)) {
+        profileDropdown.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+
+</html>

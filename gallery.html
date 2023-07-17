@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRKR ACE Gallery</title>
+  <!-- Link to Tailwind CSS CDN -->
+  <!-- Link to Lightbox2 CSS and JS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    /* Additional custom styles for the gallery */
+    .gallery-item {
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <!-- Navbar code goes here -->
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <img class="h-8 w-auto" src="https://srkrace.files.wordpress.com/2015/05/ace-logo.jpg?w=300" alt="Your Company">
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex md:ml-6">
+            <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+
+          <a href="Events.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Events</a>
+          <a href="gallery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+         
+        </div>
+
+        <!-- Profile dropdown -->
+        <div class="relative hidden md:block">
+          <div>
+            <button type="button" id="profile-button"
+              class="flex text-sm rounded-full text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800">
+              <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            </button>
+          </div>
+          <!-- Dropdown menu, show/hide based on menu state -->
+          <div id="profile-dropdown"
+            class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+            role="menu" aria-orientation="vertical" aria-labelledby="profile-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <!-- Profile option -->
+              <!-- Sign out option -->
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (hidden on larger screens) -->
+    <div class="md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+      </div>
+    </div>
+</nav>
+  <!-- Main Content Section -->
+  <section class="py-8">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-semibold mb-6">SRKR ACE Gallery</h1>
+
+      <!-- Image Gallery -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Image 1 -->
+        <div class="shadow rounded-lg overflow-hidden gallery-item">
+          <img src="https://source.unsplash.com/featured/400x300/?hackathon" alt="Technical Event" class="w-full h-40 object-cover">
+        </div>
+
+        <!-- Image 2 -->
+        <div class="shadow rounded-lg overflow-hidden gallery-item">
+          <img src="https://source.unsplash.com/featured/400x300/?cultural+fest" alt="Cultural Fest" class="w-full h-40 object-cover">
+        </div>
+
+        <!-- Image 3 -->
+        <div class="shadow rounded-lg overflow-hidden gallery-item">
+          <img src="https://source.unsplash.com/featured/400x300/?workshop" alt="Technical Workshop" class="w-full h-40 object-cover">
+        </div>
+
+        <!-- Image 4 -->
+        <div class="shadow rounded-lg overflow-hidden gallery-item">
+          <img src="https://source.unsplash.com/featured/400x300/?seminar" alt="Guest Seminar" class="w-full h-40 object-cover">
+        </div>
+
+        <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://source.unsplash.com/featured/400x300/?seminar" alt="Guest Seminar" class="w-full h-40 object-cover">
+          </div>
+  
+          <!-- Image 5 -->
+          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://source.unsplash.com/featured/400x300/?competition" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>
+
+  
+          <!-- Image 6 -->
+          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://source.unsplash.com/featured/400x300/?volunteering" alt="Community Volunteering" class="w-full h-40 object-cover">
+          </div>
+          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://source.unsplash.com/featured/400x300/?competition" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.wdhobpNC3eWwixXToQ_ZzgHaEM&pid=Api&P=0&h=180s" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.eWUjOCd3NX0YumGQSDNQAwHaEK&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.4UcZyuvVNcqRTkTRr38z0gHaE7&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="http://3.bp.blogspot.com/-VS8SPrbE-4U/VeqoFansY2I/AAAAAAAAARk/AK1VXET2ukA/s400/VIT%2BUniversity%2Btechnical%2Bfest%2BGraVITas.jpg" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.33OMupkB8PNjMomz8ifZ1AHaFj&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.nBjkSot5N3_ZzBxl2kzDwQHaEK&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.GHxET-kAmSpKmHIAmFhP-gHaD4&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>          <div class="shadow rounded-lg overflow-hidden gallery-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.z92rebhXrK4kGgPFu8PehAHaEJ&pid=Api&P=0&h=180" alt="Coding Competition" class="w-full h-40 object-cover">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <div class="container mx-auto">
+      <p>&copy; 2023 ACE. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer code goes here -->
+  <script>
+    // JavaScript to handle profile dropdown toggle
+    const profileButton = document.getElementById('profile-button');
+    const profileDropdown = document.getElementById('profile-dropdown');
+
+    function toggleProfileDropdown() {
+      profileDropdown.classList.toggle('hidden');
+    }
+
+    profileButton.addEventListener('click', toggleProfileDropdown);
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', function (event) {
+      if (!profileButton.contains(event.target)) {
+        profileDropdown.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+
+</html>
